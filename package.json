@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "@riotjs/hot-reload": "^10.0.0",
+    "riot": "^10.1.6"
+  },
+  "devDependencies": {
+    "@riotjs/compiler": "^10.0.4",
+    "@riotjs/parcel-transformer-riot": "^10.0.0",
+    "parcel": "^2.15.4"
+  }
+}

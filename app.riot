@@ -1,0 +1,21 @@
+<app>
+  <button onclick={toggle}>toggle child</button>
+  <button onclick={increment}>increment</button>
+
+  <child if={state.visible} count={state.count} />
+
+  <script>
+    import Child from './child.riot'
+
+    export default {
+      components: { Child },
+      state: { visible: true, count: 0 },
+      toggle() {
+        this.update({ visible: !this.state.visible })
+      },
+      increment() {
+        this.update({ count: this.state.count + 1 })
+      },
+    }
+  </script>
+</app>
